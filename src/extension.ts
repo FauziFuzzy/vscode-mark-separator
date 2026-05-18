@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 import * as fs from 'fs';
 
-const MARK_PATTERN = /\/\/\s*MARK:\s*(.*)/;
+const MARK_PATTERN = /\/\/\s*mm:\s*(.*)/;
 
 let separatorDecorationType: vscode.TextEditorDecorationType;
 let resolvedColor: string;
