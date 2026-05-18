@@ -35,7 +35,7 @@
         },
         "markSeparator.lineWidth": {
           "type": "string",
-          "default": "1px",
+          "default": "0.1px",
           "description": "Thickness of the separator line."
         },
         "markSeparator.lineStyle": {
