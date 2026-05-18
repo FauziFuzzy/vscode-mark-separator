@@ -4,6 +4,11 @@
   "description": "Renders a horizontal line above // MARK: comments, just like Xcode",
   "version": "0.0.1",
   "publisher": "Fuzzy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FauziFuzzy/vscode-mark-separator"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
