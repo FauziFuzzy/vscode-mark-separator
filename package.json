@@ -3,7 +3,7 @@
   "displayName": "MARK Separator",
   "description": "Renders a horizontal line above // MARK: comments, just like Xcode",
   "version": "0.0.1",
-  "publisher": "kiddocare",
+  "publisher": "Fuzzy",
   "engines": {
     "vscode": "^1.80.0"
   },
