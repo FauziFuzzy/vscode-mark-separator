@@ -1,0 +1,69 @@
+{
+  "name": "mark-separator",
+  "displayName": "MARK Separator",
+  "description": "Renders a horizontal line above // MARK: comments, just like Xcode",
+  "version": "0.0.1",
+  "publisher": "kiddocare",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "mark",
+    "separator",
+    "xcode",
+    "comment",
+    "divider",
+    "swift",
+    "dart",
+    "kotlin"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "MARK Separator",
+      "properties": {
+        "markSeparator.lineColor": {
+          "type": "string",
+          "default": "",
+          "description": "Color of the separator line. Leave empty to match the comment color of your theme."
+        },
+        "markSeparator.lineWidth": {
+          "type": "string",
+          "default": "1px",
+          "description": "Thickness of the separator line."
+        },
+        "markSeparator.lineStyle": {
+          "type": "string",
+          "default": "solid",
+          "enum": [
+            "solid",
+            "dashed",
+            "dotted"
+          ],
+          "description": "Style of the separator line."
+        },
+        "markSeparator.enabledLanguages": {
+          "type": "array",
+          "default": [],
+          "description": "Limit to specific language IDs (e.g. [\"dart\", \"swift\"]). Empty = all languages."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^25.8.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.3.0"
+  }
+}
